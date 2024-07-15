@@ -32,6 +32,6 @@ body{
 .Contenedor div{
 	display: flex;
     align-items: center;
-	width: auto;
+	width: 180px;
 	height: 100px;
 }
