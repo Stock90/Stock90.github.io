@@ -1,0 +1,37 @@
+:root {
+	--dark-menu: #353534;
+	--white-main: #F2F2F2;
+}
+body{
+	margin: 0px;
+	font-size: 12px;
+	font-family: sans-serif;
+	letter-spacing: 0.2em;
+}
+.logo-contenedor{
+	display: flex;
+	background-color: var(--dark-menu);
+	padding: 4px;
+}
+.logo-contenedor p{
+	font-size: 12px;
+	color: greenyellow;
+	padding-left: 20px;
+}
+.Main-contenedor{
+    min-height: calc(100vh - 48px); 
+}
+.Contenedor{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-around;
+	background-color: var(--white-main);
+	min-height:calc((100vh - 48px) / 3);
+}
+.Contenedor div{
+	display: flex;
+    align-items: center;
+	width: 120px;
+	height: 100px;
+}
