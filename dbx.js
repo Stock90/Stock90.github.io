@@ -3,30 +3,30 @@ const formatter = new Intl.NumberFormat('en-US', {
     currency: 'COP',
     minimumFractionDigits: 0
 })
-let dolar = 4100;
-let precio = [163.45,
-    256.21,
-    (182750/1.19/dolar),
-    (595000/1.19/dolar),
-    75.13,
-    93.91,
-    92.07,
-    40.98,
-    (1759500/1.19/dolar),
-    (3159450/1.19/dolar),
-    48.96,
-    48.96,
-    54.40,
-    54.40,
-    54.40,
-    95.31,
-    65.83
+let dolar = 4150;
+let precio = [198.46	,
+311.11	,
+43.54	,
+141.74	,
+91.22	,
+114.04	,
+111.80	,
+49.75	,
+419.16	,
+752.66	,
+59.45	,
+59.45	,
+66.05	,
+66.05	,
+66.05	,
+115.74	,
+79.94	
 ];
 
 let pesos = [];
 
 for (let i = 0; i < precio.length; i++) {
-    pesos[i] = formatter.format(Math.ceil(((precio[i] /0.82)* dolar * 1.19) / 100) * 100);
+    pesos[i] = formatter.format(Math.ceil(((precio[i] /1)* dolar * 1.19) / 100) * 100);
     document.getElementById("precio" + i).innerHTML = pesos[i];
 }
 
