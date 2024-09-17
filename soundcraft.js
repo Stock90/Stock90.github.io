@@ -4,14 +4,14 @@ const formatter = new Intl.NumberFormat('en-US', {
     minimumFractionDigits: 0
 })
 let dolar = 4150;
-let precio = [354.36
-651.84
-971.96
-1161.73
-938.54
-70.47
-150.05
-475.71
+let precio = [354.36,
+651.84,
+971.96,
+1161.73,
+938.54,
+70.47,
+150.05,
+475.71,
 311.92
     ];
 
