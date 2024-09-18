@@ -6,8 +6,10 @@ const formatter = new Intl.NumberFormat('en-US', {
 let dolar = 4150;
 let precio = [33.22	,
 13.29	,
+22.89   ,
 33.22	,
 55.37	,
+441.75  ,
 404.84	,
 626.33	,
 810.90	,
