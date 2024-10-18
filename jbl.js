@@ -3,7 +3,7 @@ const formatter = new Intl.NumberFormat('en-US', {
     currency: 'COP',
     minimumFractionDigits: 0
 })
-let dolar = 4500;
+let dolar = 4200;
 let precio = [437.24	,
 730.42	,
 489.87	,
