@@ -13,7 +13,8 @@ let precio = [358.39,
 let pesos = [];
 
 for (let i = 0; i < precio.length; i++) {
-    pesos[i] = formatter.format(Math.ceil(((precio[i] / 1) * dolar * 1.19) / 100) * 100);
+    pesos[i] = formatter.format(Math.ceil(((precio[i] / 0.82) * dolar * 1.19) / 100) * 100);
     document.getElementById("precio" + i).innerHTML = pesos[i];
+    
 }
 
