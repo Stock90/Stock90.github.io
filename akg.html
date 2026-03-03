@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="item.css"/>
+	<title>Akg |</title>
+</head>
+<body>
+	<header class="logo-contenedor">
+		<div class="top-left">
+			<a href="https://api.whatsapp.com/send/?phone=3183501209" target="_blank"><img src="assets/imgs/whatsapp-logo.png" alt="logo"></a>
+			<span>318 350 1209</span>	
+		</div>
+		<div class="filters-container">
+			<button id="filterToggle">CATEGORIA</button>
+
+			<div class="filters-menu">
+				<button data-cat="all">Todos</button>
+				<button data-cat="ACCESORIO">Accesorios</button>
+				<button data-cat="AUDIFONOS">Audifonos</button>
+				<button data-cat="MICROFONOS">Microfonos</button>
+				<button data-cat="SIS. INALAMBRICO">Inalambricos</button>
+			</div>
+		</div>
+		<div class="top-left">
+			<a href="index.html"><img class="back" src="assets/imgs/back-logo.png" alt="logo"></a>
+		</div>	
+	</header>
+	<main>
+		<div 
+			id="catalogo" 
+			class="Item-contenedor"
+			data-hoja="AKG"
+			data-img-folder="akg"
+			data-filtros="true">
+		</div>
+	</main>
+	<script src="js/catalogo.js"></script>	
+</body>
+</html>
