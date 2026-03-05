@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Catálogo de productos JBL: altavoces, amplificadores y accesorios profesionales.">
+	<meta name="theme-color" content="#353534">
+	<title>JBL | Catálogo de Productos</title>
+	<link rel="stylesheet" href="catalogo.css"/>
+</head>
+
+<body>
+
+	<header class="site-header">
+		<div class="header-left">
+			<a 
+				href="https://api.whatsapp.com/send/?phone=573183501209" 
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="Contactar por WhatsApp al 3183501209"
+			>
+				<img 
+					src="assets/imgs/whatsapp-logo.png" 
+					alt="Contactar por WhatsApp"
+				>
+			</a>
+			<a class="contact-phone" href="tel:+573183501209">
+				318 350 1209
+			</a>
+		</div>
+		<div class="header-center">
+			<div class="filters-container">
+
+				<input 
+					type="text"
+					id="searchInput"
+					placeholder="Buscar referencia..."
+					autocomplete="off"
+				>
+
+				<button id="filterToggle" type="button" aria-expanded="false" aria-controls="filters-menu">Categoria</button>
+
+				<div id="filters-menu" class="filters-menu" role="menu"></div>
+			
+			</div>
+		</div>
+		<div class="header-right">
+			<a href="index.html">
+				<img 
+					class="back" 
+					src="assets/imgs/back-logo.png" 
+					alt="Volver a la página principal"
+				>
+			</a>
+		</div>	
+	</header>
+
+	<main>
+		<div 
+			id="catalogo" 
+			class="item-contenedor"
+			data-filtros="true">
+		</div>
+	</main>
+
+	<script src="js/catalogo.js" defer></script>
+
+</body>
+</html>
