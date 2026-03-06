@@ -13,6 +13,18 @@
   }
 }
 
+@media (max-width: 600px) {
+
+  .contact-phone{
+    display:none;
+  }
+
+  .site-header{
+    grid-template-columns: auto 1fr auto;
+  }
+
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -199,4 +211,5 @@ button:focus-visible {
   object-fit: contain;
   display: block;
 }
+
 
