@@ -35,13 +35,14 @@ body{
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0 0;
   width: 100%;
 }
 .brands-grid li {
   display: flex;
   justify-content: center;
   align-items: center;
+  content-visibility: auto;
+  contain-intrinsic-size: 130px;
 }
 .brands-grid a{
   width: 70%;
@@ -51,9 +52,11 @@ body{
 }
 .brands-grid img {
   max-width: 100%;
+  height: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
-.brands-grid img:hover {
+.brands-grid a:hover img,
+.brands-grid a:focus-visible img{
   transform: scale(1.08);
 }
