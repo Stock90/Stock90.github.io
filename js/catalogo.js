@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const hoja = marca.toUpperCase();
   const carpetaImg = marca;
 
-  document.title = `${hoja} | Catálogo`;
+  document.title = `${hoja} | Catálogo de Audio Profesional`;
 
   const contenedor = document.getElementById("catalogo");
   const url = `https://opensheet.elk.sh/1QmhPMYJz44ofHM-jvuk17W1_l30i4bT8cuKxiIXQBfM/${hoja}`;
