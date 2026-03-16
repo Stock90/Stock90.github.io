@@ -17,6 +17,7 @@
 	<meta property="og:type" content="website">
 	
 	<link rel="icon" type="image/webp" href="assets/favicon.webp">
+	<link rel="preconnect" href="https://opensheet.elk.sh" crossorigin>
 	<link rel="stylesheet" href="catalogo.css"/>
 	<link rel="canonical" href="https://stock90.github.io/catalogo.html">
 
@@ -45,6 +46,10 @@
 		</div>
 		<div class="header-center">
 			<div class="filters-container">
+				
+				<label for="searchInput" class="sr-only">
+					Buscar producto
+				</label>
 
 				<input 
 					type="text"
@@ -53,7 +58,7 @@
 					autocomplete="off"
 				>
 
-				<button id="filterToggle" type="button" aria-expanded="false" aria-controls="filters-menu">Categoria</button>
+				<button id="filterToggle" type="button" aria-expanded="false" aria-controls="filters-menu">Categoría</button>
 
 				<div id="filters-menu" class="filters-menu" role="menu"></div>
 			
@@ -73,6 +78,9 @@
 	</header>
 
 	<main>
+		<h1 hidden>
+			Catálogo de equipos profesionales de audio e iluminación
+		</h1>
 		<div 
 			id="catalogo" 
 			class="item-contenedor"
