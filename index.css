@@ -30,6 +30,40 @@ body{
 	padding-left: 20px;
   text-decoration: none;
 }
+.hero {
+  background-color: var(--dark-menu);
+  padding: 0px 0px 20px;
+  text-align: center;
+  border-bottom: 3px solid #e85d04;
+}
+.hero-name {
+  font-size: 28px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 3px;
+}
+.hero-tag {
+  font-size: 11px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 4px;
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+.hero-line {
+  width: 36px;
+  height: 2px;
+  background: #e85d04;
+  margin: 14px auto 0;
+}
+.brands-label {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #888;
+  text-transform: uppercase;
+  background-color: var(--white-main);
+  padding: 10px 0px 0px;
+  text-align: center;
+}
 .brands {
   flex: 1;
   background-color: var(--white-main);
