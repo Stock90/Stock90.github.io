@@ -2,44 +2,43 @@
 	--dark-menu: #353534;
 	--white-main: #F2F2F2;
 }
-
+ 
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
+ 
 @media (prefers-reduced-motion: reduce) {
   .item {
     animation: none;
   }
 }
-
+ 
 @media (max-width: 600px) {
-
+ 
   .contact-phone{
     display:none;
   }
-
+ 
   .site-header{
     grid-template-columns: auto 1fr auto;
+    contain: layout;
   }
-
+ 
 }
-
+ 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    /*transform: translateY(12px);*/
   }
   to {
     opacity: 1;
-    /*transform: translateY(0);*/
   }
 }
-
+ 
 body{
   margin: 0;
   font-size: 12px;
-  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 	color: #1f1f1f;
   min-height: 100vh;
   display: flex;
@@ -57,37 +56,37 @@ main {
   background-color: var(--dark-menu);
   padding: 4px 16px;
 }
-
+ 
 .header-left {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 12px;
 }
-
+ 
 .header-left img{
   width:40px;
   height:auto;
 }
-
+ 
 .contact-phone {
   color: greenyellow;
   font-size: 13px;
   text-decoration: none;
 }
-
+ 
 .header-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+ 
 .header-right {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-
+ 
 button {
   background-color: transparent;
   color: white;
@@ -95,23 +94,27 @@ button {
   font-size: 12px;
   cursor: pointer;
 }
-
+ 
 button:focus-visible {
   outline: 2px solid white;
 }
-
+ 
 #filterToggle {
   display: none;
   padding: 6px 12px;
 }
-
+ 
+#filterToggle.visible {
+  display: block;
+}
+ 
 .filters-container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+ 
 .filters-menu {
   position: absolute;
   top: 110%;
@@ -126,11 +129,11 @@ button:focus-visible {
   box-shadow: 0 6px 14px rgba(0,0,0,0.35);
   white-space: nowrap;
 }
-
+ 
 .filters-menu.active {
   display: flex;
 }
-
+ 
 .filters-menu button {
   background: transparent;
   color: white;
@@ -139,14 +142,14 @@ button:focus-visible {
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
-
+ 
 .filters-menu button:last-child {
   border-bottom: none;
 }
-
+ 
 .filters-menu button:hover {
   background-color: rgba(255,255,255,0.1);
-
+ 
 }
 #searchInput{
   background: rgba(255,255,255,0.15);
@@ -157,15 +160,15 @@ button:focus-visible {
   font-size: 12px;
   width: 140px;
 }
-
+ 
 #searchInput::placeholder{
   color: rgba(255,255,255,0.7);
 }
-
+ 
 #searchInput:focus{
   outline: 2px solid white;
 }
-
+ 
 .item-contenedor{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 180px));
@@ -174,7 +177,7 @@ button:focus-visible {
   padding: 14px;
   background-color: var(--white-main);
 }
-
+ 
 .item{
   border: 1px solid #e9e9e9;
   border-radius: 18px;
@@ -182,17 +185,17 @@ button:focus-visible {
   width: 100%;
   box-shadow: 0 6px 6px rgba(0,0,0,0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  will-change: transform, opacity;
   padding: 0 10px;
   
   content-visibility: auto;
   contain-intrinsic-size: 260px;
-  contain: layout paint;
-
+  contain: layout style;
+ 
   animation: fadeInUp 1s ease forwards;
 }
 .item:hover,
 .item:focus-within{
+  will-change: transform;
   transform: translateY(-4px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
@@ -206,10 +209,10 @@ button:focus-visible {
   overflow: hidden;
 }
 .item h3{
-	margin: 0px;
+	margin: 0;
 }
 .item h4{
-	margin-top: 0px;
+	margin-top: 0;
 	color: #e85d04;
 }
 .item img {
@@ -218,16 +221,16 @@ button:focus-visible {
   object-fit: contain;
   display: block;
 }
-
+ 
 .sr-only{
-position:absolute;
-width:1px;
-height:1px;
-padding:0;
-margin:-1px;
-overflow:hidden;
-clip:rect(0,0,0,0);
-white-space:nowrap;
-border:0;
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
 }
 
