@@ -21,7 +21,6 @@
  
   .site-header{
     grid-template-columns: auto 1fr auto;
-    contain: layout;
   }
  
 }
@@ -55,6 +54,8 @@ main {
 	align-items: center;
   background-color: var(--dark-menu);
   padding: 4px 16px;
+  position: relative;
+  z-index: 100;
 }
  
 .header-left {
@@ -189,7 +190,7 @@ button:focus-visible {
   
   content-visibility: auto;
   contain-intrinsic-size: 260px;
-  contain: layout style;
+  contain: style;
  
   animation: fadeInUp 1s ease forwards;
 }
@@ -233,4 +234,3 @@ button:focus-visible {
   white-space:nowrap;
   border:0;
 }
-
