@@ -18,6 +18,10 @@
 	<meta property="og:type" content="website">
 	<meta property="og:locale" content="es_CO">
 
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Catálogo de Audio Profesional e Iluminación">
+	<meta name="twitter:description" content="Inventario de equipos profesionales: JBL, AKG, Martin, Soundcraft y más.">
+
 	<link rel="icon" type="image/webp" href="assets/favicon.webp">
 	<link rel="preconnect" href="https://opensheet.elk.sh" crossorigin>
 	<link rel="preload" href="index.css" as="style">
@@ -26,13 +30,23 @@
 
 	<script type="application/ld+json">
 		{
-		"@context": "https://schema.org",
-		"@type": "Store",
-		"name": "Stock90 Audio Profesional",
-		"url": "https://stock90.github.io",
-		"telephone": "+573183501209",
-		"description": "Catálogo de equipos profesionales de audio, iluminación y estructuras para conciertos.",
-		"areaServed": "Colombia"
+			"@context": "https://schema.org",
+			"@type": "Store",
+			"name": "Stock90 Audio Profesional",
+			"url": "https://stock90.github.io",
+			"telephone": "+573183501209",
+			"description": "Catálogo de equipos profesionales de audio, iluminación y estructuras para conciertos.",
+			"image": "https://stock90.github.io/assets/preview.jpg",
+			"areaServed": "Colombia",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Bogotá",
+				"addressRegion": "Cundinamarca",
+				"addressCountry": "CO"
+			},
+			"sameAs": [
+				"https://wa.me/573183501209"
+			]
 		}
 	</script>
 </head>
@@ -68,11 +82,11 @@
 	<p class="brands-label">Selecciona una marca</p>
 
 	<main class="brands">
-		<h1 hidden>
+		<h1 class="sr-only">
 			Catálogo de productos profesionales de audio e iluminación.
 		</h1>
 
-		<p hidden>
+		<p class="sr-only">
 			Catálogo de equipos profesionales de audio e iluminación de las marcas:
 			JBL, AKG, Crown, DBX, Martin, Elation, Soundcraft, Powersoft, SE Electronics, Obsidian Control Systems, Prolyte y König & Meyer.
 		</p>
